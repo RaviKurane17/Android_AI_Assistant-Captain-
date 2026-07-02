@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🤖 AI Phone Agent
+# 🤖 AI Phone Agent (Captain)
 
 ### *Your phone. Your voice. Your AI companion.*
 
@@ -25,18 +25,11 @@
 
 ## ✨ Features
 
-<table>
-<tr>
-<td width="50%">
-
 ### 🎙️ Always-On Wake Word
 - **Offline Porcupine** wake-word detection — works without internet
 - Custom wake chime audio feedback
 - No battery-draining cloud polling
 - Siri-style animated overlay on activation
-
-</td>
-<td width="50%">
 
 ### 🧠 Groq-Powered AI Brain
 - **Ultra-fast inference** via Groq's LLaMA models
@@ -44,19 +37,11 @@
 - Automatic model probing & fallback
 - Streaming responses for instant feedback
 
-</td>
-</tr>
-<tr>
-<td>
-
 ### 📱 Deep Device Control
 - **Accessibility Service** for full app control
 - Call management, SMS, contacts
 - Media playback, volume, brightness
 - App launch, navigation, notifications
-
-</td>
-<td>
 
 ### 💻 PC Bridge (Cross-Device)
 - **Firebase Realtime Sync** between phone ↔ PC
@@ -64,52 +49,32 @@
 - Open apps, type text, take screenshots, lock/unlock
 - Real-time PC status monitoring (CPU, RAM)
 
-</td>
-</tr>
-<tr>
-<td>
-
 ### 🔒 Security First
 - **Biometric authentication** (fingerprint / face)
 - **Encrypted SharedPreferences** (AES-256-GCM) for all API keys
 - PIN lock screen
 - No API keys hardcoded — user enters at runtime
 
-</td>
-<td>
-
 ### 🎥 AI Vision (Camera)
 - **CameraX** integration for visual AI tasks
 - Image capture & AI analysis pipeline
 - Real-time camera feed access via voice trigger
-
-</td>
-</tr>
-<tr>
-<td>
 
 ### 🔔 Notification Intelligence
 - Reads & summarizes incoming notifications
 - Smart intent classification
 - Voice-triggered notification replies
 
-</td>
-<td>
-
 ### ⚙️ Floating Widget
 - Always-on-top floating overlay
 - Quick-access agent controls
 - Non-intrusive minimal UI
 
-</td>
-</tr>
-</table>
-
 ---
 
 ## 🏗️ Architecture
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────────┐
 │                        AI Phone Agent                           │
 │                                                                 │
@@ -141,7 +106,7 @@
 
 ### 📁 Project Structure
 
-```
+```text
 Android Ai Agent/
 ├── 📱 app/
 │   └── src/main/java/com/aiphone/agent/
@@ -207,8 +172,8 @@ Android Ai Agent/
 #### Step 1 — Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/android-ai-agent.git
-cd android-ai-agent
+git clone https://github.com/RaviKurane17/Android_AI_Assistant-Captain-.git
+cd Android_AI_Assistant-Captain-
 ```
 
 #### Step 2 — Configure Firebase
@@ -365,14 +330,6 @@ furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
 ```
 
 ---
@@ -392,8 +349,6 @@ SOFTWARE.
 
 *If you find this project useful, please give it a ⭐ on GitHub!*
 
-[![GitHub Stars](https://img.shields.io/github/stars/YOUR_USERNAME/android-ai-agent?style=social)](https://github.com/YOUR_USERNAME/android-ai-agent)
+[![GitHub Stars](https://img.shields.io/github/stars/RaviKurane17/Android_AI_Assistant-Captain-?style=social)](https://github.com/RaviKurane17/Android_AI_Assistant-Captain-)
 
 </div>
-#   A n d r o i d _ A I _ A s s i s t a n t - C a p t a i n -  
- 
