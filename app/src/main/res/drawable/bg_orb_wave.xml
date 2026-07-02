@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Rounded pill shape for each waveform animation bar/orb -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Neon cyan gradient -->
+    <gradient
+        android:type="linear"
+        android:angle="270"
+        android:startColor="#FF00D4FF"
+        android:endColor="#660094CC" />
+
+    <!-- Fully rounded pill ends -->
+    <corners android:radius="8dp" />
+
+</shape>

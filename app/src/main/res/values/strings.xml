@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AI Phone Agent</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_permissions">Permissions</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="foreground_service_title">AI Phone Agent Connected</string>
+    <string name="foreground_service_text">Listening for PC commands...</string>
+    <string name="accessibility_service_description">AI Phone Agent Accessibility Service to perform actions like Go Home, Lock Screen, and Open Notifications automatically.</string>
+</resources>

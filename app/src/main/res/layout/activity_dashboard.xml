@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/captain_bg_dark">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="120dp">
+
+            <!-- Header Section -->
+            <ImageView
+                android:id="@+id/ivHeaderLogo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/app_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/btnPcLink"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_laptop"
+                android:contentDescription="PC Link"
+                app:tint="@color/captain_neon_blue"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/btnSettingsGear"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_settings"
+                android:contentDescription="Settings"
+                app:tint="@color/captain_neon_blue"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="CAPTAIN SYSTEM"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivHeaderLogo" />
+
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ONLINE &amp; SECURE"
+                android:textColor="@color/captain_neon_blue"
+                android:textSize="12sp"
+                android:letterSpacing="0.2"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+            <!-- PC Link moved to dedicated screen -->
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchFloatingWidget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="32dp"
+                android:text="Floating Assistant Widget"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/tvSubtitle" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchOfflineMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="16dp"
+                android:text="Offline Privacy Shield"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/switchFloatingWidget" />
+
+            <TextView
+                android:id="@+id/tvHistoryLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Command History"
+                android:textColor="@color/captain_neon_blue"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/switchOfflineMode" />
+
+            <TextView
+                android:id="@+id/tvCommandHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:textColor="#DDDDDD"
+                android:textSize="14sp"
+                android:background="#1AFFFFFF"
+                android:padding="12dp"
+                android:minHeight="100dp"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="false"
+                app:layout_constraintTop_toBottomOf="@id/tvHistoryLabel" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <!-- Voice Assistant Floating Button -->
+    <Button
+        android:id="@+id/btnVoiceCommand"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/bg_button_neon"
+        android:text="🎙️ HOLD TO SPEAK"
+        android:textColor="@color/captain_bg_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:elevation="12dp"
+        android:translationZ="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

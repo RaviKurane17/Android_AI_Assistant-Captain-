@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Captain Dark Theme Colors -->
+    <color name="captain_bg_dark">#050814</color>
+    <color name="captain_card_dark">#0A1128</color>
+    <color name="captain_card_stroke">#1C2A53</color>
+    
+    <!-- Captain Neon Blues -->
+    <color name="captain_neon_blue">#00D4FF</color>
+    <color name="captain_deep_blue">#0047AB</color>
+    <color name="captain_glow_blue">#3300D4FF</color>
+    
+    <color name="primary">@color/captain_neon_blue</color>
+    <color name="primary_dark">@color/captain_bg_dark</color>
+    <color name="accent">@color/captain_deep_blue</color>
+    <color name="text_secondary">#8B9BB4</color>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Captain AI — Hey Siri Style Voice Overlay
+    Slides up from the bottom, shows animated waveform orbs + live transcription text.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingTop="20dp"
+    android:paddingBottom="32dp"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp">
+
+    <!-- Frosted dark glass background card -->
+    <LinearLayout
+        android:id="@+id/overlayCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:background="@drawable/bg_overlay_glass">
+
+        <!-- Status label (e.g., "Listening...", "Processing...") -->
+        <TextView
+            android:id="@+id/tvOverlayStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listening..."
+            android:textColor="#FFFFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:alpha="0.8"
+            android:layout_marginBottom="18dp" />
+
+        <!-- Waveform orb row — 4 animated vertical bars -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="18dp">
+
+            <View
+                android:id="@+id/orb1"
+                android:layout_width="6dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_orb_wave" />
+
+            <View
+                android:id="@+id/orb2"
+                android:layout_width="6dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_orb_wave" />
+
+            <View
+                android:id="@+id/orb3"
+                android:layout_width="6dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_orb_wave" />
+
+            <View
+                android:id="@+id/orb4"
+                android:layout_width="6dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_orb_wave" />
+
+            <View
+                android:id="@+id/orb5"
+                android:layout_width="6dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_orb_wave" />
+
+            <View
+                android:id="@+id/orb6"
+                android:layout_width="6dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_orb_wave" />
+
+            <View
+                android:id="@+id/orb7"
+                android:layout_width="6dp"
+                android:layout_height="18dp"
+                android:background="@drawable/bg_orb_wave" />
+
+        </LinearLayout>
+
+        <!-- Live partial transcription text (updates word by word as you speak) -->
+        <TextView
+            android:id="@+id/tvPartialText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#E0F4FF"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:minHeight="28dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:letterSpacing="0.01" />
+
+        <!-- Powered by label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAPTAIN AI  •  Say anything"
+            android:textColor="#4D9CC4"
+            android:textSize="10sp"
+            android:letterSpacing="0.12"
+            android:layout_marginTop="14dp"
+            android:alpha="0.7" />
+
+    </LinearLayout>
+
+</LinearLayout>

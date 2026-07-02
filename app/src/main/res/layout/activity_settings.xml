@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?android:attr/colorBackground">
+
+    <!-- Custom Toolbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?android:attr/colorBackground"
+        android:elevation="4dp">
+        
+        <ImageView
+            android:id="@+id/btnSettingsBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="?android:attr/textColorPrimary"
+            android:contentDescription="Back"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+            
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="?android:attr/textColorPrimary"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Captain Wake Word"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="?android:attr/textColorPrimary"
+                android:layout_marginBottom="16dp"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchSettingsWakeWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enable 'Captain' Wake Word"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="16sp"
+                android:layout_marginBottom="32dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"
+                android:layout_marginBottom="32dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Security &amp; API"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="?android:attr/textColorPrimary"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PC Lock PIN:"
+                android:textSize="14sp"
+                android:textColor="?android:attr/textColorSecondary"
+                android:layout_marginBottom="8dp"/>
+            <EditText
+                android:id="@+id/etSettingsPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter 4-digit PIN"
+                android:textColor="#000000"
+                android:textColorHint="#888888"
+                android:inputType="numberPassword"
+                android:background="@android:drawable/editbox_background"
+                android:padding="12dp"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Picovoice AccessKey (For Wake Word):"
+                android:textSize="14sp"
+                android:textColor="?android:attr/textColorSecondary"
+                android:layout_marginBottom="8dp"/>
+            <EditText
+                android:id="@+id/etSettingsPicovoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Picovoice AccessKey"
+                android:textColor="#000000"
+                android:textColorHint="#888888"
+                android:inputType="textPassword"
+                android:background="@android:drawable/editbox_background"
+                android:padding="12dp"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Groq API Key:"
+                android:textSize="14sp"
+                android:textColor="?android:attr/textColorSecondary"
+                android:layout_marginBottom="8dp"/>
+            <EditText
+                android:id="@+id/etSettingsApiKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="xai-..."
+                android:textColor="#000000"
+                android:textColorHint="#888888"
+                android:inputType="textPassword"
+                android:background="@android:drawable/editbox_background"
+                android:padding="12dp"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Groq Model (Optional):"
+                android:textSize="14sp"
+                android:textColor="?android:attr/textColorSecondary"
+                android:layout_marginBottom="8dp"/>
+            <EditText
+                android:id="@+id/etSettingsModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="e.g. llama-3.1-8b-instant"
+                android:textColor="#000000"
+                android:textColorHint="#888888"
+                android:inputType="text"
+                android:background="@android:drawable/editbox_background"
+                android:padding="12dp"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boss Info (e.g. My name is Ravi):"
+                android:textSize="14sp"
+                android:textColor="?android:attr/textColorSecondary"
+                android:layout_marginBottom="8dp"/>
+            <EditText
+                android:id="@+id/etSettingsBossInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Information for the AI to remember"
+                android:textColor="#000000"
+                android:textColorHint="#888888"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:gravity="top|start"
+                android:background="@android:drawable/editbox_background"
+                android:padding="12dp"
+                android:layout_marginBottom="32dp"/>
+
+            <Button
+                android:id="@+id/btnSettingsSave"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="SAVE SETTINGS"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="24dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
