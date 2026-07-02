@@ -159,10 +159,10 @@ Android Ai Agent/
   <table>
     <tr>
       <td align="center"><img src="screenshots/screen1.png" width="200px;" alt="Screenshot 1"/><br/><b>Dashboard</b></td>
-      <td align="center"><img src="screenshots/screen2.png" width="200px;" alt="Screenshot 2"/><br/><b>AI Chat</b></td>
-      <td align="center"><img src="screenshots/screen3.png" width="200px;" alt="Screenshot 3"/><br/><b>Vision</b></td>
-      <td align="center"><img src="screenshots/screen4.png" width="200px;" alt="Screenshot 4"/><br/><b>PC Link</b></td>
-      <td align="center"><img src="screenshots/screen5.png" width="200px;" alt="Screenshot 5"/><br/><b>Settings</b></td>
+      <td align="center"><img src="screenshots/screen2.png" width="200px;" alt="Screenshot 2"/><br/><b>AI Chat HomeSrren</b></td>
+      <td align="center"><img src="screenshots/screen3.png" width="200px;" alt="Screenshot 3"/><br/><b>PC Link</b></td>
+      <td align="center"><img src="screenshots/screen4.png" width="200px;" alt="Screenshot 4"/><br/><b>Setting</b></td>
+      <td align="center"><img src="screenshots/screen5.png" width="200px;" alt="Screenshot 5"/><br/><b>Captain is Listening wakeup word(When You Call Captain)</b></td>
     </tr>
   </table>
 </div>
