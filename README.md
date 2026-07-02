@@ -153,7 +153,7 @@ Android Ai Agent/
 
 ---
 
-## 📸 Screenshots
+## 📸 Snapshots
 
 <div align="center">
   <table>
@@ -310,9 +310,10 @@ Once the wake word is detected, you can say:
 
 ---
 
-## 🤝 Contributing
+## 🤝 Contributing with RK❤️
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+This is My first Rarerest Experince Project I Love This Project
 
 1. **Fork** the repository
 2. Create your feature branch: `git checkout -b feature/AmazingFeature`
